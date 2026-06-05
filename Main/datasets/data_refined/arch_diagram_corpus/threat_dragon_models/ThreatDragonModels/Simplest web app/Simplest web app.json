@@ -1,0 +1,225 @@
+{
+  "summary": {
+    "title": "Simplest web app",
+    "owner": "me",
+    "description": "The simplest web app for testing threat / vulnerability generation"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "contrib"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Simple web app",
+        "thumbnail": "./public/content/images/thumbnail.linddun.jpg",
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 459,
+                "y": 100
+              },
+              "angle": 0,
+              "id": "099f7d6d-bb33-4a24-bf01-6a8ebcdcc6f3",
+              "z": 1,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic spoofing threat"
+                },
+                {
+                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
+                  "title": "Generic tampering threat",
+                  "type": "Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic tampering threat"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic repudiation threat"
+                },
+                {
+                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
+                  "title": "Generic DoS threat",
+                  "type": "Denial of service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic DoS threat"
+                },
+                {
+                  "ruleId": "c1377855-ea20-4c97-8861-f95c364fb8d2",
+                  "title": "Generic elevation threat",
+                  "type": "Elevation of privilege",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic elevation threat"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "LINDDUN",
+                  "type": "Disclosure of information",
+                  "title": "LINDDUN disclosure"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "webApp"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 34,
+                "y": 63
+              },
+              "angle": 0,
+              "id": "7949a259-fefd-49a9-896a-6849e5002b91",
+              "z": 2,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic spoofing threat"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic repudiation threat"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "CIA",
+                  "type": "Integrity",
+                  "title": "CIA integrity"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "extActor"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "7949a259-fefd-49a9-896a-6849e5002b91"
+              },
+              "target": {
+                "id": "099f7d6d-bb33-4a24-bf01-6a8ebcdcc6f3"
+              },
+              "vertices": [
+                {
+                  "x": 339,
+                  "y": 148
+                }
+              ],
+              "id": "7b155240-27f2-47ba-9fb3-b4c2fe71ee85",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "infoFlow",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 561,
+                "y": 33
+              },
+              "target": {
+                "x": 453,
+                "y": 300
+              },
+              "vertices": [
+                {
+                  "x": 397,
+                  "y": 89
+                }
+              ],
+              "id": "543e0a4a-e8fd-4c83-b2f3-35f65069860b",
+              "z": 4,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        },
+        "diagramType": "LINDDUN"
+      }
+    ],
+    "reviewer": "you"
+  }
+}

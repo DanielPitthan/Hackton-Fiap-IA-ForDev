@@ -1,0 +1,214 @@
+{
+  "summary": {
+    "title": "Multi-page web application",
+    "owner": "The owner",
+    "description": "Used to start testing mongoDB with multiple pages\nand as a demonstration"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "jgadsden"
+      },
+      {
+        "name": "somebody_else"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "Web application -second page",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "a92ced5b-a418-4cbd-80f0-c7859222458e"
+              },
+              "target": {
+                "id": "becb5fa0-f204-4de8-93a4-1d896b74e399"
+              },
+              "vertices": [
+                {
+                  "x": 245,
+                  "y": 146
+                }
+              ],
+              "id": "32f52f14-a409-4af9-870b-08a2dbe21d8e",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "protocol stack",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 351,
+                "y": 107
+              },
+              "angle": 0,
+              "id": "becb5fa0-f204-4de8-93a4-1d896b74e399",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "protected\nprocess"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1,
+                "y": 114
+              },
+              "angle": 0,
+              "id": "a92ced5b-a418-4cbd-80f0-c7859222458e",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "External Actor"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 283,
+                "y": 303
+              },
+              "target": {
+                "x": 564,
+                "y": 49
+              },
+              "vertices": [
+                {
+                  "x": 299,
+                  "y": 218
+                },
+                {
+                  "x": 355,
+                  "y": 73
+                }
+              ],
+              "id": "5b177697-dbec-46d2-a95f-e200933152dc",
+              "z": 4,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
+      },
+      {
+        "title": "Web application - second page",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 1,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 50,
+                "y": 50
+              },
+              "angle": 0,
+              "id": "e9428edb-c997-4725-9ae0-ca3cf0b7531a",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 0"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 294,
+                "y": 116
+              },
+              "angle": 0,
+              "id": "0a38ad21-a823-4885-b1fe-a2b1aec53297",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "actor 1"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
+      }
+    ],
+    "reviewer": "The reviewer"
+  }
+}

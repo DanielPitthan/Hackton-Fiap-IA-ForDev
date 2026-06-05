@@ -1,0 +1,21 @@
+A primeira imagem (à esquerda) é uma visualização de infraestrutura que define as camadas de rede e os limites físicos e lógicos, fundamentais para analisar ameaças como Elevação de Privilégios e Informações Reveladas.
+
+O que o torna STRIDE-ready:
+
+Limites de Confiança (Trust Boundaries): As linhas tracejadas laranjas rotuladas como "External Trust Boundary" e "Internal Trust Boundary" são os pontos mais críticos para a análise STRIDE. Elas mostram onde os dados mudam de nível de confiança (ex: da internet para a rede privada), exigindo verificações rigorosas de autenticação (combate a Spoofing) e autorização (combate a Elevação de Privilégios).
+
+Fluxos de Dados Explicitados: Cada seta de comunicação é rotulada não apenas com a função (ex: "Internal API"), mas com o protocolo e porta (ex: "TCP/8080" ou "HTTPS/443"). Isso ajuda a identificar ameaças de Tampering (adulteração) e Information Disclosure (vazamento) ao longo da rede.
+
+Rotulagem Clara: Os componentes (Web Server, Database, IdP) e as entidades externas (Public Internet Users) estão claramente identificados, permitindo uma análise granular de cada elemento contra o STRIDE.
+
+A segunda imagem (à direita) é um Diagrama de Fluxo de Dados (DFD) funcional, que segue o fluxo de uma transação específica da aplicação, como a gestão de perfil de usuário. É excelente para analisar ameaças de Tampering, Information Disclosure e Repúdio.
+
+O que o torna STRIDE-ready:
+
+Rotulagem Numerada: Os fluxos de dados são numerados (1 a 6) para um passo a passo sequencial da análise. Isso ajuda a rastrear a jornada de um dado sensível e onde ele pode ser comprometido.
+
+Fronteiras de Segurança Específicas: Além da fronteira externa, temos fronteiras de segurança delimitando o acesso a bancos de dados ("Database Trust Boundary") e à área de orquestração interna. Isso é crucial para o STRIDE nos componentes de armazenamento.
+
+Tipagem de Dados: O fluxo detalha o que está trafegando (ex: "JWT/Payload" ou "Token Validation Data"). Saber o tipo de dado permite focar em ameaças de Tampering (alteração de um token JWT) ou Information Disclosure (acesso não autorizado a dados de perfil).
+
+Serviços de Auditoria: A inclusão explícita de um "Audit Logging Service" com fluxo de "Audit Log Event" é fundamental para a análise de ameaças de Repudiation (repúdio), provando que houveram logs gerados para cada ação crítica.

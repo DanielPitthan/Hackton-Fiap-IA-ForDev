@@ -1,0 +1,43 @@
+# Web Framework
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+
+# Image Processing
+Pillow==10.3.0
+opencv-python-headless==4.9.0.80
+
+# AI / Vision Models
+openai==1.35.3
+anthropic==0.29.0
+google-generativeai==0.7.2
+
+# Data / Storage
+sqlalchemy==2.0.31
+alembic==1.13.2
+aiosqlite==0.20.0
+
+# HTTP Client
+httpx==0.27.0
+
+# Configuration
+python-dotenv==1.0.1
+pydantic==2.8.2
+pydantic-settings==2.3.4
+
+# File handling
+python-multipart==0.0.9
+aiofiles==23.2.1
+
+# Report generation
+reportlab==4.2.2
+jinja2==3.1.4
+weasyprint==62.3
+
+# Utilities
+loguru==0.7.2
+tenacity==8.4.2
+
+# Testing
+pytest==8.2.2
+pytest-asyncio==0.23.7
+httpx==0.27.0

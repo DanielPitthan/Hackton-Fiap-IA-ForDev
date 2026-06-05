@@ -1,0 +1,224 @@
+{
+  "summary": {
+    "title": "th"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "this",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 124,
+                "y": 121
+              },
+              "angle": 0,
+              "id": "33cdba1e-de67-45aa-ba05-a44f5be61f51",
+              "z": 1,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Generic spoofing threat",
+                  "type": "Spoofing",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic spoofing threat"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic repudiation threat"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "actor 0"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "33cdba1e-de67-45aa-ba05-a44f5be61f51"
+              },
+              "target": {
+                "x": 418,
+                "y": 88
+              },
+              "vertices": [],
+              "id": "e059f898-1938-4400-8acd-735f9a59c64b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 1",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 279,
+                "y": 361
+              },
+              "angle": 0,
+              "id": "9eb5c5b4-fec3-4118-b6da-9d2e61cf277b",
+              "z": 3,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
+                  "title": "Generic tampering threat",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic tampering threat"
+                },
+                {
+                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
+                  "title": "Generic repudiation threat",
+                  "type": "Repudiation",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic repudiation threat"
+                },
+                {
+                  "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
+                  "title": "Generic information disclosure threat",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic information disclosure threat"
+                },
+                {
+                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
+                  "title": "Generic DoS threat",
+                  "type": "Denial of service",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "A generic DoS threat"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "store 2"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 599,
+                "y": 151
+              },
+              "angle": 0,
+              "id": "ecd45c66-4462-40ab-bc49-25dbf34478b4",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 3"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 30,
+                "y": 20
+              },
+              "target": {
+                "x": 110,
+                "y": 100
+              },
+              "vertices": [
+                {
+                  "x": 137,
+                  "y": 361
+                }
+              ],
+              "id": "c6e93f60-4173-4d4c-91ab-3dd357dfa2d9",
+              "z": 5,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
+      }
+    ]
+  }
+}

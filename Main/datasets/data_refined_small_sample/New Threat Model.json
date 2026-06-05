@@ -1,0 +1,20 @@
+{
+  "version": "2.5.0",
+  "summary": {
+    "title": "New Threat Model",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "jon gadsden"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}

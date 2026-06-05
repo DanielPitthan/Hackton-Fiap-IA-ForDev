@@ -1,0 +1,39 @@
+Diagramas de arquitetura de sistemas são representações visuais que mapeiam a estrutura, os componentes, as integrações e o comportamento de um software ou ambiente de TI. No contexto de segurança da informação e modelagem de ameaças, eles são a principal ferramenta para entender como os dados fluem e onde estão as fronteiras de segurança, permitindo a aplicação de metodologias como a STRIDE.
+
+Os dois diagramas que você enviou (um detalhando uma infraestrutura na AWS e outro mostrando um fluxo de integração de APIs no Azure) são excelentes exemplos. Para que um diagrama seja útil para a análise STRIDE, ele deve funcionar como um Diagrama de Fluxo de Dados (DFD) ou fornecer informações equivalentes.
+
+Aqui está o que esses diagramas representam e quais elementos neles são cruciais para a análise STRIDE:
+
+1. Elementos Essenciais do Diagrama para o STRIDE
+A metodologia STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) exige que você olhe para partes específicas do sistema. Um bom diagrama de arquitetura deve exibir:
+
+Entidades Externas (External Entities): Quem ou o que interage com o sistema de fora.
+
+Nos seus diagramas: Os "Usuários SEI" (AWS) e o ícone de usuário com o globo da internet (Azure). O Microsoft Entra também age como uma entidade externa provedora de identidade.
+
+Ameaças STRIDE: Principalmente Spoofing (falsificação de identidade) e Repudiation (repúdio).
+
+Processos (Processes): Os serviços, aplicações ou componentes que recebem, processam e enviam dados.
+
+Nos seus diagramas: As instâncias EC2 "SEI / SIP", o "API Gateway" e o "Logic Apps".
+
+Ameaças STRIDE: Podem sofrer com todas as ameaças, especialmente Tampering (adulteração), Elevation of Privilege (elevação de privilégios) e Denial of Service (negação de serviço).
+
+Armazenamentos de Dados (Data Stores): Onde os dados descansam (bancos de dados, caches, sistemas de arquivos).
+
+Nos seus diagramas: Amazon RDS, Elastic File System (NFS) e ElastiCache no diagrama da AWS. Os "Backend Systems" no diagrama do Azure.
+
+Ameaças STRIDE: Tampering (modificação não autorizada de dados), Information Disclosure (vazamento de dados) e Repudiation (se não houver logs de auditoria).
+
+Fluxos de Dados (Data Flows): As setas que conectam todos esses componentes, indicando a direção e, idealmente, o protocolo da comunicação.
+
+Nos seus diagramas: As linhas com setas (por exemplo, a seta marcada como "HTTP" indo para o API Gateway).
+
+Ameaças STRIDE: Tampering (interceptação e modificação de pacotes) e Information Disclosure (escuta na rede/sniffing).
+
+2. O Conceito Mais Crítico: Limites de Confiança (Trust Boundaries)
+Para aplicar o STRIDE, você deve desenhar ou identificar Limites de Confiança no diagrama. Estes são os pontos onde os dados mudam de um nível de confiança para outro (por exemplo, da internet pública para uma rede privada).
+
+No diagrama da AWS: Os limites de confiança estão perfeitamente desenhados através das caixas delimitadoras: a Virtual Private Cloud (VPC), as zonas de disponibilidade (Availability Zones) e, mais importante, a separação entre Public Subnet (onde estão os Load Balancers) e a Private Subnet (onde estão os servidores e bancos de dados). Um invasor que tenta pular da Sub-rede Pública para a Privada está cruzando um limite de confiança, o que exige forte análise de Elevation of Privilege e Information Disclosure.
+
+No diagrama do Azure: O limite de confiança principal é o perímetro pontilhado marcado como Resource group, dividindo a internet pública (não confiável) dos recursos internos de gerenciamento e orquestração (API Management e Logic Apps).
